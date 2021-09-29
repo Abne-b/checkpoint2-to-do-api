@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="formularioTarefa">
+        <fieldset>
+            <legend>Task</legend>
+            <label for="title">Título</label>
+            <input type="text" name="title" id="title">
+            <label for="dateCreate">Data de Criação</label>
+            <input type="date" name="dateCreate" id="dateCreate" disabled>
+            <label for="dateEnd">Data de Conclusão</label>
+            <input type="date" name="dateEnd" id="dateEnd">
+            <label for="description">Descrição</label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            <div>
+                <input type="button" name="submit" value="Adicionar" id="submit">
+                <input type="button" name="fetch"  value="Buscar na API" id="fetch">
+            </div>
+        </fieldset>
+    </form>
+    <div id="card-container" class="card-container">
+        
+    </div>
+    <script src="./js/validacaoScript.js"></script>
+    <!-- <script src="./js/card.js"></script> -->
+</body>
+</html>
